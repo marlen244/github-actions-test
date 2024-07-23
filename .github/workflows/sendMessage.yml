@@ -1,6 +1,8 @@
 name: Send Message
 
-on: repository_dispatch
+on: 
+  repository_dispatch:
+    types: [send_message]
 
 jobs:
   display_message:
