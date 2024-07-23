@@ -1,0 +1,10 @@
+name: Send Message
+
+on: repository_dispatch
+
+jobs:
+  display_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a message
+        run: echo "Hallo Welt, das ist eine Nachricht von GitHub Actions!"
