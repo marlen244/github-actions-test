@@ -1,6 +1,8 @@
 name: hello-world
 
-on: repository_dispatch
+on: 
+  repository_dispatch:
+    types: [hello-world]
 
 jobs:
   hello-world-job:
